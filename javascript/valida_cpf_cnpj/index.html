@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validaçao de CNPJ e CPF</title>
+	<!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="valida_cnpj_cpf.js"></script>
+
+    
+</head>
+<body>
+
+	
+	<script type="text/javascript">
+		//VALIDOS
+		if ( valida_cpf_cnpj( '38.741.509/0001-68' ) ) {
+		    console.log('CNPJ Válido');
+		} else {
+		    console.log('CNPJ inválido!');
+		}
+		 
+		// OU
+		 
+		if ( valida_cpf_cnpj( '085.647.291-30 ' ) ) {
+		    console.log('CPF Válido');
+		} else {
+		    console.log('CPF inválido!');
+		}
+
+		// INVALIDOS
+		if ( valida_cpf_cnpj( '111.191.191-11 ' ) ) {
+		    console.log('CPF Válido');
+		} else {
+		    console.log('CPF inválido!');
+		}
+
+		if ( valida_cpf_cnpj( '38.741.509/0001-99' ) ) {
+		    console.log('CNPJ Válido');
+		} else {
+		    console.log('CNPJ inválido!');
+		}
+	</script>
+	
+</body>
+</html>
